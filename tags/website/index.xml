@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Website on A penny for my thoughts</title>
-    <link>joshuabragge.github.io/tags/website/</link>
+    <link>https://joshuabragge.github.io/tags/website/</link>
     <description>Recent content in Website on A penny for my thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 27 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="joshuabragge.github.io/tags/website/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joshuabragge.github.io/tags/website/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Welcome to the show</title>
-      <link>joshuabragge.github.io/what-can-a-man-do-2019-01-25/</link>
+      <link>https://joshuabragge.github.io/what-can-a-man-do-2019-01-25/</link>
       <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>joshuabragge.github.io/what-can-a-man-do-2019-01-25/</guid>
+      <guid>https://joshuabragge.github.io/what-can-a-man-do-2019-01-25/</guid>
       <description>This is a test of your emergency broadcasting equipment. Please stand by&amp;hellip;</description>
     </item>
     
