@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Black &amp; Light</title>
+    <title>Black &amp; Light </title>
     <link>https://joshuabragge.github.io/</link>
-    <description>Recent content on Black &amp; Light</description>
+    <description>Recent posts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 27 Jan 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://joshuabragge.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
     
     
     <item>
@@ -22,10 +21,15 @@
 </description>
     </item>
     
-    
-    
+    <item>
+      <title>About</title>
+      <link>https://joshuabragge.github.io/page/about/</link>
+      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://joshuabragge.github.io/page/about/</guid>
+      <description>&lt;p&gt;I am just some guy that works on interesting problems with some cool tech.&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>
-
-
