@@ -6,28 +6,28 @@
     <description>Recent posts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Feb 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://joshuabragge.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Welcome to the show</title>
-      <link>https://joshuabragge.github.io/post/welcome-to-the-show-2019-01-27/</link>
-      <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
+      <title>About</title>
+      <link>https://joshuabragge.github.io/about/</link>
+      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://joshuabragge.github.io/post/welcome-to-the-show-2019-01-27/</guid>
-      <description>&lt;p&gt;This is a test of your emergency broadcasting equipment. Please stand by&amp;hellip;&lt;/p&gt;
+      <guid>https://joshuabragge.github.io/about/</guid>
+      <description>&lt;p&gt;I am just some guy that works on interesting problems with some cool tech.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>About</title>
-      <link>https://joshuabragge.github.io/page/about/</link>
-      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
+      <title>Welcome to the show</title>
+      <link>https://joshuabragge.github.io/post/welcome-to-the-show/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://joshuabragge.github.io/page/about/</guid>
-      <description>&lt;p&gt;I am just some guy that works on interesting problems with some cool tech.&lt;/p&gt;
+      <guid>https://joshuabragge.github.io/post/welcome-to-the-show/</guid>
+      <description>&lt;p&gt;This is a test of your emergency broadcasting equipment. Please stand by&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
