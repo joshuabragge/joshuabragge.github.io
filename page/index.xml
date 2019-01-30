@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Thoughts</title>
-    <link>joshuabragge.github.io/page/</link>
+    <link>https://joshuabragge.github.io/page/</link>
     <description>Recent content in Pages on Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 09 Feb 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="joshuabragge.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joshuabragge.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>joshuabragge.github.io/about/</link>
+      <link>https://joshuabragge.github.io/about/</link>
       <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>joshuabragge.github.io/about/</guid>
+      <guid>https://joshuabragge.github.io/about/</guid>
       <description>I am just some guy that works on interesting problems with some cool tech.</description>
     </item>
     
