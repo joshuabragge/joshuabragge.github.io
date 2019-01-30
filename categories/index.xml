@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Thoughts</title>
-    <link>joshuabragge.github.io/categories/</link>
-    <description>Recent content in Categories on Thoughts</description>
+    <title>Categories on penny for my thoughts</title>
+    <link>https://joshuabragge.github.io/categories/</link>
+    <description>Recent content in Categories on penny for my thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
-	<atom:link href="joshuabragge.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joshuabragge.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
