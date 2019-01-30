@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Need For Code</title>
+    <link>https://needforcode.github.io/categories/</link>
+    <description>Recent content in Categories on Need For Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 May 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://needforcode.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Algorithms</title>
+      <link>https://needforcode.github.io/categories/algorithms/</link>
+      <pubDate>Sun, 15 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://needforcode.github.io/categories/algorithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Structures</title>
+      <link>https://needforcode.github.io/categories/data-structures/</link>
+      <pubDate>Wed, 26 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://needforcode.github.io/categories/data-structures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distributed Computing</title>
+      <link>https://needforcode.github.io/categories/distributed-computing/</link>
+      <pubDate>Thu, 24 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://needforcode.github.io/categories/distributed-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Installations</title>
+      <link>https://needforcode.github.io/categories/installations/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://needforcode.github.io/categories/installations/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

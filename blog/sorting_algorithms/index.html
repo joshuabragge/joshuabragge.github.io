@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Sorting Algorithms</title>
+	<meta name="description" content="Theory of all sorting structures">
+	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta property="og:title" content="Sorting Algorithms" />
+<meta property="og:description" content="Theory of all sorting structures" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://needforcode.github.io/blog/sorting_algorithms/" /><meta property="article:published_time" content="2016-05-15T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2016-05-15T00:00:00&#43;00:00"/>
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Sorting Algorithms"/>
+<meta name="twitter:description" content="Theory of all sorting structures"/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<script type="text/javascript" src="/js/scripts.js"></script>
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		
+</head>
+<body class="body body-right-sidebar">
+	<div class="container container-outer">
+		<header class="header">
+			<div class="container container-inner">
+				<div class="logo" role="banner">
+					<a class="logo__link" href="/" title="Need For Code" rel="home">
+						<div class="logo__title">Need For Code</div>
+						<div class="logo__tagline">A Sudheer Doppalapudi Blog</div>
+					</a>
+				</div>
+			</div>
+			
+<nav class="menu">
+	<ul class="menu__list">
+		<li class="menu__item"><a class="menu__link" href="/about/">ABOUT ME</a></li>
+		<li class="menu__item"><a class="menu__link" href="/blog/">BLOG</a></li>
+		<li class="menu__item"><a class="menu__link" href="https://needforcode.com">HOME</a></li>
+	</ul>
+</nav>
+
+		</header>
+		<div class="wrapper clearfix">
+
+<main class="main content">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Sorting Algorithms</h1><div class="post__meta meta">
+<svg class="icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+<time class="post__meta-date meta-date" datetime="2016-05-15T00:00:00">May 15, 2016</time>
+<span class="post__meta-categories meta-categories">
+	<svg class="icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta-categories__list"><a class="meta-categories__link" href="/categories/algorithms" rel="category">Algorithms</a></span>
+</span></div>
+		</header>
+		<div class="post__content clearfix">
+			
+
+<h1 id="classifications">Classifications</h1>
+
+<ul>
+<li>Time Complexity</li>
+<li>Space Complexity</li>
+<li>Stability</li>
+<li>Comparision Vs Non-Comparision</li>
+</ul>
+
+<h1 id="simple-sorts">Simple Sorts</h1>
+
+<h2 id="selection-sort">Selection Sort</h2>
+
+<h3 id="overview">Overview</h3>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Time Complexity</td>
+<td>Best: $O(n^2)$ Worst: $O(n^2)$</td>
+</tr>
+
+<tr>
+<td>Space Complexity</td>
+<td>$O(1)$ <em>in-place</em></td>
+</tr>
+
+<tr>
+<td>Stability</td>
+<td>Stable Sort</td>
+</tr>
+
+<tr>
+<td>Sort Type</td>
+<td>Comparision</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="introduction">Introduction</h3>
+
+<blockquote>
+<p>Find the smallest element from the array, exchange with the first and so on&hellip;
+<img src="https://user-images.githubusercontent.com/8268939/44372390-864d5780-a498-11e8-892a-d4ba3f33c58a.jpg" width="30%"></p>
+</blockquote>
+
+<ul>
+<li><p>For every exchange, an element will be in its right place.</p>
+
+<pre><code>As seen in the figure below... if N is length of the array:
+Total Comparisions: N^2/2
+Total Exchanges: N
+</code></pre></li>
+</ul>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/8268939/44372394-8a797500-a498-11e8-875f-d22e9b593909.jpg" width="55%">
+</p>
+
+<h3 id="pseudo-code">Pseudo Code</h3>
+
+<pre><code class="language-java">
+  public static void sort(int[] a) {
+    int size = a.length;
+    for(int i=0; i&lt; size-1; i++) {
+      int min = i;
+      for(int j=i+1; j &lt; size; j++) {
+        if(a[min] &gt; a[j]) min = j;
+      //exchange i &amp; min  
+      }
+    }
+  }
+</code></pre>
+
+<h3 id="complexity">Complexity</h3>
+
+<pre><code>Selection Sort                              Cost            Times
+public static void sort(int[] a) {                       
+    int size = a.length;                     C1              1
+    for(int i=0; i&lt; size-1; i++) {           C2              n
+        int min = i;                         C3              n-1
+        for(int j=i+1; j &lt; size; j++) {      C4              $\sum _{j=1}^{n-1} (n-j+1)$      
+            if(a[min] &gt; a[j]) min = j;       C5              $\sum _{j=1}^{n-1} (n-j)$
+        }
+        //exchange i &amp; min                   C6              n-1
+    }
+}
+</code></pre>
+
+<p>$T(n) = C1*1  +  C2*n + C3*(n-1)] + C4*(\sum _{j=1}^{n-1} (n-j+1)  ) + C5*(\sum _{j=1}^{n-1} (n-j)) + C6*(n-1)$</p>
+
+<h2 id="insertion-sort">Insertion Sort</h2>
+
+<h3 id="overview-1">Overview</h3>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Time Complexity</td>
+<td>Best: $O(n)$ Worst: $O(n^2)$</td>
+</tr>
+
+<tr>
+<td>Space Complexity</td>
+<td>O(1) <em>in-place</em></td>
+</tr>
+
+<tr>
+<td>Stability</td>
+<td>Stable Sort</td>
+</tr>
+
+<tr>
+<td>Sort Type</td>
+<td>Comparision</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="introduction-1">Introduction</h3>
+
+<blockquote>
+<p>For every iteration, take first element from unsorted part and insert it in its right place in sorted part.
+<img src="https://user-images.githubusercontent.com/8268939/44380454-4c904700-a4c0-11e8-8275-b90411117d82.jpg" width="30%"></p>
+</blockquote>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/8268939/44380506-a133c200-a4c0-11e8-9193-19f47d669dca.jpg" width="50%">
+</p>
+
+<h3 id="explanation">Explanation</h3>
+
+<ul>
+<li>In first iteration, copy first unsorted element (2) into temp, move elements in sorted set to the right as long as you find a position for 2 to insert.</li>
+<li>In second iteration, copy first unsorted (5) into temp, move 6 to the right to insert 5 in its right place.</li>
+<li>In third iteration, copy first unsorted (1) into temp, move (6,5,2) to its right(blue arrows) to insert element 1 (temp) in its right place.</li>
+<li>Continue so on until the operations complete.</li>
+</ul>
+
+<h3 id="pseudo-code-1">Pseudo Code</h3>
+
+<pre><code class="language-java">
+public static void sort(int[] a) {
+  int size = a.length;
+  
+  for(int i=1; i &lt; size; i++) {
+      int key = a[i];
+      int j = i-1;
+      while(j&gt;0 &amp;&amp; a[j] &gt; key) {
+          a[j+1] = a[j];
+          j = j-1;
+      }
+      a[j+1] = key;
+  }
+}
+</code></pre>
+
+<h3 id="complexity-analysis">Complexity Analysis</h3>
+
+<pre><code>Selection Sort                              Cost            Times
+public static void sort(int[] a) {                       
+    int size = a.length;                     C1              1
+    for(int i=1; i &lt; size; i++) {            C2              n
+        int key = a[i];                      C3              n-1
+        int j = i-1;                         C4              n-1
+        while(j&gt;0 &amp;&amp; a[j] &gt; key) {           C5              $\sum _{i=1} ^{n-1} t_{i}$     
+            a[j+1] = a[j];                   C6              $\sum _{i=1} ^{n-1} (t_{i}-1)$
+            j = j-1;                         C7              $\sum _{i=1} ^{n-1} (t_{i}-1)$
+        }
+        //exchange i &amp; min                   C8              n-1
+    }
+}
+</code></pre>
+
+<p>If <code>n</code> is the no of elements in the array&hellip;</p>
+
+<p>$\mathbf{Time complexity} : T(n) = (cost\ of each\ statement) * (no\ of\ times\ its\ executed)$</p>
+
+<p>$T(n) = C1*1  +  C2*n + C3*(n-1) + C4*(n-1) +  C5*(\sum _{i=1} ^{n-1} t_{i}) + C6*(\sum _{i=1} ^{n-1} (t_{i}-1)) + C7*(\sum _{i=1} ^{n-1} (t_{i}-1)) + C8*(n-1)$</p>
+
+<p>The running time depends on $t_i$ and it varies according to the input.</p>
+
+<h4 id="best-case">Best case</h4>
+
+<ul>
+<li>In best case the statements inside while loop won&rsquo;t execute since $a[j]&lt;key$</li>
+<li>$t_i=1$ for each i=0,1,2.. in for loop in line TBD while executing while loop.</li>
+</ul>
+
+<p>so $\sum _{i=1}^{n-1} t_i = (n-1)\  \forall\  t_i = 1$</p>
+
+<p>$T(n) = C1*1 + C2*n + C3*(n-1) + C4*(n-1) + C5*(n-1) + 0 + 0 + C8*(n-1)$</p>
+
+<p>$T(n) = (C1-C3-C4-C5-C8) + n*(C2+C3+C4+C5+C8)$</p>
+
+<p>$\approx  O(n)$</p>
+
+<h4 id="worst-case">Worst case</h4>
+
+<p>Lets take a decreasing sequence and try to sort it.</p>
+
+<ul>
+<li>Now the while loop will execute $i$ times for each $i=1,2,3&hellip;n$</li>
+</ul>
+
+<p>so $\sum _{i=1}^{n-1} t_i$   =  $\sum _{i=1}^{n-1} i$  = ($\sum _{i=1}^{n})-n$ = $ (\frac{n(n+1)}{2})-n$</p>
+
+<p>and</p>
+
+<p>$\sum _{i=1}^{n-1} (t_i-1)$ = $\sum _{i=1}^{n-1} (i-1)$ = $(\sum _{i=1}^{n-1} i) - (\sum _{i=1}^{n-1} 1)$ = $ \Big(\Big(\frac{n(n+1)}{2})-n\Big) - \Big(n-1\Big)\Big)$</p>
+
+<p>Substituting these in the original TBD equation, we will get $\approx O(n^2)$</p>
+
+<h1 id="divide-conquer">Divide &amp; Conquer</h1>
+
+<ul>
+<li><strong>Divide</strong> the problem into many smaller subproblems</li>
+<li><strong>Conquer</strong> the subproblems by solving them recursively</li>
+<li><strong>Combine</strong> the solutions of these subproblems to get actual solution</li>
+</ul>
+
+<p>Divide &amp; Conquer approach comes under Recurrence relations. So we need to understand about recursion.</p>
+
+<p>Let&rsquo;s say we have a problem of size $n$, we recursively solve $a$ no of sub-problems each of size $n/b$, then we combine all these solutions in $O(n^d)$ time.</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/8268939/44565854-4946c680-a71f-11e8-9053-1ac7b84df3a1.png" width="60%">
+</p>
+
+<p>$T(n) = aT(n/b)+O(n^d)$</p>
+
+<h2 id="merge-sort">Merge Sort</h2>
+
+<pre><code>Merge sort uses between 1/2 N lg N and N lg N compares to sort an array of length N
+</code></pre>
+
+<h3 id="time-complexity-analysis">Time Complexity Analysis</h3>
+
+<p>$T(n) = \underbrace{T(\frac{n}{2})}_\text{left half} + \underbrace{T(\frac{n}{2})}_\text{right half} + \underbrace{n}_\text{merge 2 halfs}$</p>
+
+<p>Take the left half and calculate</p>
+
+<p>$T(\frac{n}{2}) = \underbrace{T(\frac{n}{4})}_\text{left half} + \underbrace{T(\frac{n}{4})}_\text{right half} + \underbrace{n/2}_\text{merge 2 halfs}$</p>
+
+<p>Substitute 2nd equation in 1st</p>
+
+<p>$T(n) = 2^2 * T(\frac{n}{2^2}) + 2 * n$</p>
+
+<p>so on &hellip;&hellip;.. For the last level.</p>
+
+<p>$T(n) = 2^i * T(\frac{n}{2^i}) + i * n$</p>
+
+<p>For the last level, it will be T(1). so $T(\frac{n}{2^i}) = T(1)$</p>
+
+<p>Hence $\frac{n}{2^i} = 1 \iff  n = 2^i \iff i=log_{2}n$</p>
+
+<p>$T(n) = 2^{log_{2}n} * T(\frac{n}{2^{log_{2}n}}) + log_{2}n * n$</p>
+
+<p>$T(n) = n + n log_{2}n$</p>
+
+<p>$\approx O(nlogn)$</p>
+
+<h2 id="quick-sort">Quick Sort</h2>
+
+<h1 id="bubble-sort-varients">Bubble sort varients</h1>
+
+<h2 id="bubble-sort">Bubble Sort</h2>
+
+<h2 id="shell-sort">Shell Sort</h2>
+
+<h1 id="distribution-sorts">Distribution Sorts</h1>
+
+<h2 id="counting-sort">Counting Sort</h2>
+
+<h2 id="bucket-sort">Bucket Sort</h2>
+
+<h2 id="radix-sort">Radix Sort</h2>
+
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16"><path d="M16 9.5c0 .373-.24.74-.5 1l-5 5c-.275.26-.634.5-1 .5-.373 0-.74-.24-1-.5L1 8a2.853 2.853 0 0 1-.7-1C.113 6.55 0 5.973 0 5.6V1.4C0 1.034.134.669.401.401.67.134 1.034 0 1.4 0h4.2c.373 0 .95.113 1.4.3.45.187.732.432 1 .7l7.5 7.502c.26.274.5.632.5.998zM3.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/sorting/" rel="tag">Sorting</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/algorithms/" rel="tag">Algorithms</a></li>
+	</ul>
+</div>
+	</article>
+	
+	
+<nav class="post-nav row clearfix">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="/blog/spark_transformations/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Transformations in Spark</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next col-1-2">
+		<a class="post-nav__link" href="/blog/hugo_on_github_pages/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Host Hugo generated static site on Github Pages</p></a>
+	</div>
+</nav>
+	
+</main>
+<aside class="sidebar post__sidebar">
+<div class="post__toc toc">
+	<h4 class="widget__title">Page content</h4>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+<ul>
+<li><a href="#classifications">Classifications</a></li>
+<li><a href="#simple-sorts">Simple Sorts</a>
+<ul>
+<li><a href="#selection-sort">Selection Sort</a>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#pseudo-code">Pseudo Code</a></li>
+<li><a href="#complexity">Complexity</a></li>
+</ul></li>
+<li><a href="#insertion-sort">Insertion Sort</a>
+<ul>
+<li><a href="#overview-1">Overview</a></li>
+<li><a href="#introduction-1">Introduction</a></li>
+<li><a href="#explanation">Explanation</a></li>
+<li><a href="#pseudo-code-1">Pseudo Code</a></li>
+<li><a href="#complexity-analysis">Complexity Analysis</a>
+<ul>
+<li><a href="#best-case">Best case</a></li>
+<li><a href="#worst-case">Worst case</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#divide-conquer">Divide &amp; Conquer</a>
+<ul>
+<li><a href="#merge-sort">Merge Sort</a>
+<ul>
+<li><a href="#time-complexity-analysis">Time Complexity Analysis</a></li>
+</ul></li>
+<li><a href="#quick-sort">Quick Sort</a></li>
+</ul></li>
+<li><a href="#bubble-sort-varients">Bubble sort varients</a>
+<ul>
+<li><a href="#bubble-sort">Bubble Sort</a></li>
+<li><a href="#shell-sort">Shell Sort</a></li>
+</ul></li>
+<li><a href="#distribution-sorts">Distribution Sorts</a>
+<ul>
+<li><a href="#counting-sort">Counting Sort</a></li>
+<li><a href="#bucket-sort">Bucket Sort</a></li>
+<li><a href="#radix-sort">Radix Sort</a></li>
+</ul></li>
+</ul>
+</nav>
+	</div>
+</div>
+</aside>
+	</div>
+		<footer class="footer">
+			<div class="container container-inner">
+				<div class="footer__copyright">&copy; 2018 Need For Code. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  "HTML-CSS": { linebreaks: { automatic: true } },
+         SVG: { linebreaks: { automatic: true } },
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+</body>
+</html>

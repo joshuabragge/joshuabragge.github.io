@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Data Structures</title>
+	<meta name="description" content="Theory of all data structures">
+	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta property="og:title" content="Data Structures" />
+<meta property="og:description" content="Theory of all data structures" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://needforcode.github.io/blog/data_structures/" /><meta property="article:published_time" content="2014-03-26T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2014-03-26T00:00:00&#43;00:00"/>
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Data Structures"/>
+<meta name="twitter:description" content="Theory of all data structures"/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<script type="text/javascript" src="/js/scripts.js"></script>
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		
+</head>
+<body class="body body-right-sidebar">
+	<div class="container container-outer">
+		<header class="header">
+			<div class="container container-inner">
+				<div class="logo" role="banner">
+					<a class="logo__link" href="/" title="Need For Code" rel="home">
+						<div class="logo__title">Need For Code</div>
+						<div class="logo__tagline">A Sudheer Doppalapudi Blog</div>
+					</a>
+				</div>
+			</div>
+			
+<nav class="menu">
+	<ul class="menu__list">
+		<li class="menu__item"><a class="menu__link" href="/about/">ABOUT ME</a></li>
+		<li class="menu__item"><a class="menu__link" href="/blog/">BLOG</a></li>
+		<li class="menu__item"><a class="menu__link" href="https://needforcode.com">HOME</a></li>
+	</ul>
+</nav>
+
+		</header>
+		<div class="wrapper clearfix">
+
+<main class="main content">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Data Structures</h1><div class="post__meta meta">
+<svg class="icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+<time class="post__meta-date meta-date" datetime="2014-03-26T00:00:00">March 26, 2014</time>
+<span class="post__meta-categories meta-categories">
+	<svg class="icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta-categories__list"><a class="meta-categories__link" href="/categories/data-structures" rel="category">Data Structures</a></span>
+</span></div>
+		</header>
+		<div class="post__content clearfix">
+			
+
+<h2 id="types">Types</h2>
+
+<ul>
+<li>Linear: order is maintained. Ex: Array, LinkedList, Stack, Queue.</li>
+<li>Non-Linear: Ex: Trees, Graph</li>
+</ul>
+
+<h2 id="arrays">Arrays</h2>
+
+<h3 id="features">Features</h3>
+
+<ul>
+<li>Collection of elements. Also called with names Vectors, Tuples.
+
+<ul>
+<li>One dimensional array</li>
+<li>Two dimensional array</li>
+</ul></li>
+<li>Homogenous (all elements are of same type)</li>
+<li>Ordered</li>
+</ul>
+
+<h3 id="types-of-arrays">Types of Arrays</h3>
+
+<ul>
+<li>Static Arrays (fixed size)
+
+<ul>
+<li>Have O(1) insertion, deletion and reading.</li>
+<li>Easy to implement.</li>
+</ul></li>
+<li>Dynamic Arrays (grow in size as array grows)
+
+<ul>
+<li>Flexible in size</li>
+<li>Perforamance as cost for flexibility</li>
+<li>Complext to implement than fixed array.</li>
+</ul></li>
+</ul>
+
+<h3 id="usage">Usage</h3>
+
+<ul>
+<li>Used to implement lookup tables.</li>
+<li>Implement lists and Strings.</li>
+<li>Many databases consist of 1-D arrays whose elements are records.</li>
+<li>Implment heaps, hash tables, deques, queues, stacks and VLists.</li>
+<li>2D Arrays are used in graph theory, Image processing and algebraic equations.
+<br /></li>
+</ul>
+
+<h3 id="limitations-of-arrays">Limitations of Arrays</h3>
+
+<ul>
+<li>Size can&rsquo;t be increased or decreased during runtime.</li>
+<li>Insertion and deletion on arrays in the middle are inefficient.
+<br /></li>
+</ul>
+
+<h3 id="problems-on-arrays">Problems on Arrays</h3>
+
+<ul>
+<li>Find missing number in array of continuous elements from 1 to n.</li>
+<li>Find missing number in an array of duplicate elements of length n with elements 1 to n.</li>
+<li>Sort a given array</li>
+<li>Sort elements by frequency in an array</li>
+<li>Merge 2 sorted arrays</li>
+<li>Merge 2 unsorted arrays</li>
+<li>Find median of 2 sorted arrays</li>
+<li>Max sum such that no 2 elements are adjacent</li>
+<li>Check if array contains a number</li>
+<li>Find largest and smallest number in an unsorted array</li>
+<li>Find pairs whose sum is equal to given sum</li>
+<li>Find repetitive numbers in array if it contains duplicates</li>
+<li>Remove duplicate elements from an array</li>
+<li>Find an element which repeated only once while all others repeated twice</li>
+<li>Find top 2 elements from unsorted array</li>
+<li>Rearrange positive and negetive numbers in sorted order</li>
+<li>Find sub array with max sum in an array of pos and neg number</li>
+<li>Find length of longest sequence in an array</li>
+<li>Reverse an array</li>
+<li>Find common elements in 3 sorted arrays</li>
+<li>Sort a 2D array by values</li>
+<li>Find an element in sorted 3D array</li>
+<li>Find the duplicate in an array of 10, if a number is repeated 5 times.</li>
+</ul>
+
+<h2 id="array-lists">Array Lists</h2>
+
+<h3 id="features-1">Features</h3>
+
+<ul>
+<li>Resizable-array implementation of the List interface.</li>
+<li>Dynamic allocation of memory if the list is filled.</li>
+</ul>
+
+<h3 id="pros">Pros</h3>
+
+<ul>
+<li>Allows usage of Generics</li>
+<li>Dynamic allocation of memory incase array is filled.</li>
+<li>Object oriented</li>
+<li>dynamically add or remove elements</li>
+</ul>
+
+<h3 id="limitations">Limitations</h3>
+
+<ul>
+<li>Needs contiguous blocks of memory for larger arrays.</li>
+<li>Expanding the array list when you want to increase is performance limitation.</li>
+<li>O(n) worst case for insertion.</li>
+</ul>
+
+<h3 id="big-o">Big O</h3>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th align="center">Array</th>
+<th align="right">Array Lists</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Access</td>
+<td align="center">O(1)</td>
+<td align="right">O(1)</td>
+</tr>
+
+<tr>
+<td>Search</td>
+<td align="center">O(n)</td>
+<td align="right">O(n)</td>
+</tr>
+
+<tr>
+<td>Insertion</td>
+<td align="center">O(1)</td>
+<td align="right">O(n)</td>
+</tr>
+
+<tr>
+<td>Deletion</td>
+<td align="center">O(1)</td>
+<td align="right">O(1)</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="pseudo-code">Pseudo Code</h3>
+
+<h4 id="to-set-an-element">To set an element</h4>
+
+<pre><code class="language-java">set(int index, E item) {
+        IOBCheck(index);
+
+        E oldValue = get(index);
+        values[index] = item;
+        size++;
+        return oldValue;
+}
+</code></pre>
+
+<h4 id="to-add-an-element">To add an element</h4>
+
+<pre><code class="language-java">add(E item) {
+        if (arraySize &lt; arrayLength) {
+            values[size++] = item;
+            return true;
+        } else {
+            resizeArray();
+            values[size++] = item;
+        }
+        return false;
+}
+</code></pre>
+
+<h4 id="to-get-an-element">To get an element</h4>
+
+<pre><code class="language-java">get(int index) {
+        IOBCheck(index);
+        return values[index];
+}
+</code></pre>
+
+<h4 id="to-remove-an-element">To remove an element</h4>
+
+<pre><code class="language-java">remove(int index) {
+        IOBCheck(index);
+        E oldValue = values[index];
+        for (int i = index; i + 1 &lt; values.length; i++) {
+            values[i] = values[i + 1];
+        }
+        values[--size] = null;
+        return oldValue;
+}
+</code></pre>
+
+<h4 id="to-find-element-in-an-index">To find element in an index</h4>
+
+<pre><code class="language-java">indexOf(E o) {
+        if (null == o) {
+            for (int i = 0; i &lt; values.length; i++) {
+                if (values[i] == o) {
+                    return i;
+                }
+            }
+        } else {
+            for (int i = 0; i &lt; values.length; i++) {
+                if (o.equals(values[i])) {
+                    return i;
+                }
+            }
+        }
+        return -1;
+}
+</code></pre>
+
+<h2 id="linked-lists">Linked Lists</h2>
+
+<h3 id="features-2">Features:</h3>
+
+<ul>
+<li>Collection of nodes where each node contains field and address of next node.</li>
+<li>First node is head node and last node is tail node.</li>
+<li>Nodes are scattered in different memory blocks, need not be contiguous.</li>
+<li>Compiler dynamically allocates memory space to each node.</li>
+</ul>
+
+<h3 id="types-1">Types</h3>
+
+<ul>
+<li>Singly LL</li>
+<li>Doubly LL</li>
+<li>Circular LL</li>
+<li>Multi List (List containing multiple LL)</li>
+</ul>
+
+<h3 id="usages">Usages</h3>
+
+<ul>
+<li>Trees</li>
+<li>Graphs</li>
+<li>Heaps</li>
+<li>Dynamic Stack</li>
+<li>Dynamic Queue</li>
+<li>Polynomials</li>
+</ul>
+
+<h3 id="pros-1">Pros</h3>
+
+<ul>
+<li>Size can be dynamically increased at run time.</li>
+<li>Insertion and deletion are comparatively fast.</li>
+</ul>
+
+<h3 id="limitations-1">Limitations</h3>
+
+<ul>
+<li>Pointer to next node occupy additional storage space.</li>
+<li>Can&rsquo;t be accessed directly.</li>
+</ul>
+
+<h3 id="big-o-1">Big O</h3>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th align="center">Singly LL</th>
+<th align="right">Doubly LL</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Access</td>
+<td align="center">O(n)</td>
+<td align="right">O(n)</td>
+</tr>
+
+<tr>
+<td>Search</td>
+<td align="center">O(n)</td>
+<td align="right">O(n)</td>
+</tr>
+
+<tr>
+<td>Insertion</td>
+<td align="center">O(1)</td>
+<td align="right">O(1)</td>
+</tr>
+
+<tr>
+<td>Deletion</td>
+<td align="center">O(n)</td>
+<td align="right">O(n)</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="problems-on-ll">Problems on LL</h3>
+
+<ul>
+<li>Check if a singly LL is a palindrome.</li>
+<li>Add a node in middle of LL</li>
+<li>Delete a node in middle of LL</li>
+<li>Print singly LL in reverse</li>
+<li>Merge 2 sorted LL</li>
+<li>Delete duplicate value nodes in a LL</li>
+<li>Sort a LL</li>
+<li>Merge a LL into another in alternate positions</li>
+<li>Swap every 2 nodes in a LL</li>
+<li>Delete alternate nodes of a LL</li>
+<li>Delete a node in middle of Singly LL if mid pointer is given.</li>
+</ul>
+
+<h3 id="pseudo-code-singly-ll">Pseudo Code (singly LL)</h3>
+
+<p><img src="src/docs/images/singly_ll.png" alt="" /></p>
+
+<h4 id="set-an-element-at-an-index">Set an element at an index</h4>
+
+<pre><code class="language-java">set(int index, E item) {
+        if(head == null) {
+            head = new Node(item,null);
+        } else {
+            int position=1;
+            Node current = head;
+            while(position&lt;index) {
+                current = current.next;
+            }
+            Node temp = current.next;
+            current.next = new Node(item,temp);
+        }
+        size++;
+        return item;
+}
+</code></pre>
+
+<h4 id="add-an-element">Add an element</h4>
+
+<pre><code class="language-java">add(E item) {
+        if(head == null) {
+            head = new Node(item,null);
+        } else {
+            Node current = head;
+            while(current.next!=null) {
+                current = current.next;
+            }
+            current.next = new Node(item,null);
+        }
+        size++;
+        return true;
+}
+</code></pre>
+
+<h4 id="get-an-element-at-index">Get an element at index</h4>
+
+<pre><code class="language-java">get(int index) {
+        if(index&lt;-1 &amp;&amp; index&gt;size) {
+            IOBException(index);
+        }
+        Node current = head;
+        int position=0;
+        while(position++ &lt; index) {
+            current = current.next;
+        }
+        return current.item;
+}
+</code></pre>
+
+<h4 id="remove-an-element-at-index">Remove an element at index</h4>
+
+<pre><code class="language-java">remove(int index) {
+        if(index&lt;-1 &amp;&amp; index&gt;size) {
+            IOBException(index);
+        }
+        Node current = head;
+        int position = 1;
+        while(position &lt; index) {
+            current = current.next;
+        }
+        E oldValue = current.next.item;
+        current.next = current.next.next;
+        size--;
+        return oldValue;
+}
+</code></pre>
+
+<h2 id="stack">Stack</h2>
+
+<h3 id="features-3">Features</h3>
+
+<p>List where insertion and deletion can be done from one side. LIFO. Linear.
+- Homogenous data items which are ordered.
+- LIFO</p>
+
+<h3 id="stack-adt">Stack ADT</h3>
+
+<ul>
+<li>push : inserting element on top of stack</li>
+<li>pop : removes top of stack</li>
+<li>top : returns top of stack
+NOTE: all operations above happens in O(1).</li>
+</ul>
+
+<h3 id="implementations">Implementations</h3>
+
+<ul>
+<li>Stack using Arrays</li>
+<li>Stack using LL</li>
+</ul>
+
+<h3 id="usage-1">Usage</h3>
+
+<ul>
+<li>Parantesis matching</li>
+<li>Infix to Postfix</li>
+<li>Stack frames for function calls</li>
+<li>Recursive procedures</li>
+<li>MS word undo redo</li>
+<li>Forward and backward in websites</li>
+<li>Towers of Hanoi, Tree traversals, Histogram</li>
+</ul>
+
+<h3 id="pros-2">Pros</h3>
+
+<ul>
+<li>Easy to implement</li>
+<li>used in applications required LIFO</li>
+<li>Avoids burden of deleting or cleaning up.</li>
+</ul>
+
+<h3 id="limitations-2">Limitations</h3>
+
+<ul>
+<li>Stack memory is limited.</li>
+<li>Random access is not possible.</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Array impl</th>
+<th>Linked List impl</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Create</td>
+<td>O(1)</td>
+<td>O(1)</td>
+</tr>
+
+<tr>
+<td>Destroy</td>
+<td>O(1)</td>
+<td>O(1)</td>
+</tr>
+
+<tr>
+<td>Push</td>
+<td>O(1)</td>
+<td>O(1)</td>
+</tr>
+
+<tr>
+<td>Pop</td>
+<td>O(1)</td>
+<td>O(1)</td>
+</tr>
+
+<tr>
+<td>Is empty</td>
+<td>O(1)</td>
+<td>O(1)</td>
+</tr>
+
+<tr>
+<td>Is full</td>
+<td>O(1)</td>
+<td>&ndash;</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="problems-on-stack">Problems on stack</h3>
+
+<ul>
+<li>Infix to postfix conversion.</li>
+<li>Reverse a string using stack.</li>
+<li>Sort a stack using recursion.</li>
+<li>Implement stack using queue.</li>
+<li>Reverse a stack using recursion.</li>
+<li>implement a stack using 2 queue.</li>
+</ul>
+
+<h3 id="pseudo-code-stack-using-ll">Pseudo code (Stack using LL)</h3>
+
+<p><img src="src/docs/images/stack_ll.png" alt="" /></p>
+
+<h4 id="push-operation">Push operation</h4>
+
+<pre><code class="language-java">push(Object item) {
+        if(head == null) {
+            head = new Node((E)item);
+        } else {
+            head.next = new Node((E)item);
+        }
+        size++;
+}
+</code></pre>
+
+<h4 id="pop-operation">Pop operation</h4>
+
+<pre><code class="language-java">pop() {
+        Node temp;
+        if(head == null) {
+            throw new EmptyStackException(&quot;stack is empty&quot;);
+        } else {
+            temp = head;
+            head = head.next;
+        }
+        size --;
+        return temp.data;
+}
+</code></pre>
+
+<h4 id="peep-operation">Peep Operation</h4>
+
+<pre><code class="language-java">peek() {
+        Node temp;
+        if(head == null) {
+            throw new EmptyStackException(&quot;stack is empty&quot;);
+        } else {
+            temp = head;
+        }
+        return temp.data;
+}
+</code></pre>
+
+<h2 id="queue">Queue</h2>
+
+<h3 id="features-4">Features</h3>
+
+<ul>
+<li>FIFO</li>
+<li>Homogenous elements</li>
+<li>Insert at rear and remove at front.</li>
+<li>Enqueue, Dequeue, front, isEmpty etc.</li>
+</ul>
+
+<h3 id="usages-1">Usages</h3>
+
+<ul>
+<li>Printer Scheduler</li>
+<li>OS use queues to implement scheduling policy</li>
+<li>Queue&rsquo;s in Distributed Computing</li>
+</ul>
+
+<h3 id="implementations-1">Implementations</h3>
+
+<ul>
+<li>Array</li>
+<li>Linked List</li>
+</ul>
+
+<h3 id="circular-queue">Circular Queue</h3>
+
+<ul>
+<li>Empty locations in queue can be re-filled by rear pointer unlike normal queue.</li>
+</ul>
+
+<h3 id="priority-queue-impl">Priority Queue Impl</h3>
+
+<ul>
+<li>Array</li>
+<li>Linked List</li>
+<li>Heap based</li>
+</ul>
+
+<h3 id="problems-on-queue">Problems on Queue</h3>
+
+<ul>
+<li>Implement Queue using 2 stack.</li>
+<li>Max of all sub-arrays of size k.</li>
+<li>Efficiently implement k Queues in a single array.</li>
+<li>Implement deque with insertion, deletion on both sides with O(1).</li>
+</ul>
+
+<h3 id="pseudo-code-queue-using-ll">Pseudo Code (Queue using LL)</h3>
+
+<p><img src="src/docs/images/queue_ll.png" alt="" /></p>
+
+<h4 id="enqueue">EnQueue</h4>
+
+<pre><code class="language-java">EnQueue(E item) {
+        Node temp = new Node(item);
+        if(head == null) {
+            tail = temp;
+            head = tail;
+        } else {
+            tail.next = temp;
+            tail = tail.next;
+        }
+        size++;
+}
+</code></pre>
+
+<h4 id="dequeue">DeQueue</h4>
+
+<pre><code class="language-java">DeQueue() {
+        if(head == null) {
+            throw new EmptyQueueException(&quot;queue is empty&quot;);
+        }
+            Node temp = head;
+            head = head.next;
+        size --;
+        return (E) temp.data;
+}
+</code></pre>
+
+<h2 id="tree">Tree</h2>
+
+<p><img width="546" alt="tree_pic" src="https://cloud.githubusercontent.com/assets/8268939/22764760/bb1587be-ee3a-11e6-9f67-2c4a9c147e26.png"></p>
+
+<h3 id="features-5">Features</h3>
+
+<ul>
+<li>Non linear data structure (order is not important).</li>
+<li>The depth of a node is the number of edges from the root to the node.</li>
+<li>The height of a node is the number of edges from the node to the deepest leaf.</li>
+<li>The height of leaf node is 0.</li>
+</ul>
+
+<h3 id="types-of-trees">Types of Trees</h3>
+
+<ul>
+<li>Binary Tree: Each node can have utmost two children.</li>
+<li>Binary search tree: left less than given node, right greater than given node.</li>
+<li>AVL tree:</li>
+<li>Red-Black tree:</li>
+<li>Splay tree:</li>
+<li>Trie Structure:</li>
+<li>Suffix tree:</li>
+<li>Huffman Tree:</li>
+<li>B Trees:</li>
+</ul>
+
+<h3 id="types-of-binary-trees">Types of binary Trees</h3>
+
+<ul>
+<li>Perfect Binary Tree: All interior nodes have two children and all leaves have the same depth.</li>
+<li>complete binary tree: every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible</li>
+<li>Strict Binary Tree: each node has exactly zero or 2 children.</li>
+<li>Full Binary Tree: Each node has 2 children and all leaf nodes are at same level.</li>
+<li>Ordered Search Trees: data values in left sub tree are less than right tree, no duplicates.</li>
+<li>Expression Tree: Represent Arthematic expression. Operands &amp; Operators in nodes.</li>
+<li>Heap: Data value in any node greater than left sub tree &amp; right sub tree. Can be used in Priority queue.</li>
+</ul>
+
+<h3 id="usage-2">Usage</h3>
+
+<ul>
+<li>Hierarchial Structures</li>
+<li>Table of contents</li>
+<li>Unix file system directory structure</li>
+<li>Arithmatic expressions (binary tree)</li>
+<li>Expression trees are used in compilers</li>
+<li>Huffman trees for compression of data</li>
+<li>Hash trees, similar to hash tables</li>
+<li>Routing trees for network traffic</li>
+<li>To solve database problem such as indexing</li>
+</ul>
+
+<p><img width="528" alt="screen shot 2017-03-09 at 12 02 12 am" src="https://cloud.githubusercontent.com/assets/8268939/23736707/d2b2b3d8-045b-11e7-9813-e4eadc7e2253.png"></p>
+
+<h3 id="properties-of-binary-tree">Properties of Binary Tree</h3>
+
+<ul>
+<li>No of Nodes in complete binary tree: 2<sup>h</sup> &lt;= N &lt;= 2<sup>(h+1)</sup>-1 where N: No of Nodes h: height of tree.</li>
+<li>No of binary trees are possible with n nodes: 2<sup>n</sup> - n</li>
+<li>Height of a node (len of longest path from it down to leaf): 1+(max(height(left_subtree)+height(right_subtree)))</li>
+<li>Empty tree is also a valid binary tree.</li>
+</ul>
+
+<h3 id="binary-tree-implementation">Binary Tree Implementation</h3>
+
+<ul>
+<li>Array</li>
+<li>Linked List</li>
+</ul>
+
+<h3 id="recursive-definition">Recursive definition</h3>
+
+<ul>
+<li>Binary tree is a root with left sub tree and right sub tree.</li>
+</ul>
+
+<h3 id="tree-traversal">Tree Traversal</h3>
+
+<h4 id="breadth-first-traversal">Breadth First Traversal:</h4>
+
+<pre><code class="language-java">  Queue queue = initialize empty queue;
+
+  BFT(TreeNode root) {
+    if(root==null) return;
+    queue.add(root);
+    while(!queue.isEmpty()) {
+        TreeNode node = queue.remove();
+        print node;
+        if(node.left != null) queue.add(node.left);
+        if(node.right !=null) queue.add(node.right);
+    }
+   }
+</code></pre>
+
+<h4 id="depth-first-traversal">Depth First Traversal</h4>
+
+<h5 id="pre-order">Pre Order</h5>
+
+<p>Root first, Traverse left sub tree in pre-order, then right sub tree in Pre-Order.</p>
+
+<h6 id="using-recursion">Using Recursion</h6>
+
+<pre><code class="language-java">    PreOrder(root) {
+        Visit the root
+        if node.left  ≠ null PreOrder(root.left)
+        if node.right  ≠ null PreOrder(root.right)
+    }
+</code></pre>
+
+<h6 id="using-iteration">Using Iteration</h6>
+
+<pre><code class="language-java">    PreOrder_Iterative(root) {
+        if(root == null) return;
+        Stack stack = Init the stack;
+        stack.push(root);
+        while(!stack.isEmpty) {
+            top = stack.top();
+            print top
+            stack.pop()
+                if(root.right !=null) 
+                    stack.push(root.right);
+                if(root.left !=null)
+                    stack.push(root.left);
+        }
+    }
+</code></pre>
+
+<h5 id="in-order">In Order</h5>
+
+<ul>
+<li>Traverse left sub tree in Inorder, then root, then right sub tree in In Order.</li>
+
+<li><p>InOrder traversal prints the sorted order in a BST</p>
+
+<h6 id="using-recursion-1">Using Recursion</h6>
+
+<pre><code class="language-java">InOrder(root) {
+    if node.left  ≠ null InOrder(root.left)
+    Visit the root
+    if node.right  ≠ null InOrder(root.right)
+}
+</code></pre>
+
+<h6 id="using-iteration-1">Using Iteration</h6>
+
+<pre><code class="language-java">InOrder_Iterative(root) {
+    if(root == null) return;
+    Stack stack = Init the stack;
+    while(1) {
+        while(root!=null) {
+            stack.push(root);
+            root = root.left;
+        }
+	    if(stack empty) break;
+        root = stack.pop();
+        print root;
+        root = root.right();
+    }
+}
+</code></pre>
+
+<h5 id="post-order">Post Order</h5>
+
+<p>Traverse left sub tree Post order, then Right sub tree post order, then root.</p>
+
+<h6 id="using-recursion-2">Using Recursion</h6>
+
+<pre><code class="language-java">    PostOrder(root) {
+    if node.left  ≠ null PostOrder(root.left)
+    if node.right  ≠ null PostOrder(root.right)
+	Visit the root
+    }
+</code></pre>
+
+<h6 id="using-iteration-2">Using Iteration</h6>
+
+<pre><code class="language-java">PostOrder_Iterative(root) {
+    if(root == null) return;
+    Stack stack = Init the stack;
+	stack.push(root);
+        
+	while(stack not empty) {
+		temp = stack.pop();
+		
+		if(temp.left not null and temp.right not null) {
+			print stack.pop();
+		} else {
+			if(temp.right != null) {
+				stack.push(temp.right);
+				temp.right = null;
+			}
+
+			if(temp.left != null) {
+				stack.push(temp.left);
+				temp.left = null;
+			}
+		}
+  }
+}
+</code></pre></li>
+</ul>
+
+<p><img src="https://cloud.githubusercontent.com/assets/8268939/22766646/b99f1ee0-ee44-11e6-894a-62c2ebb146a4.jpg" alt="tree_traversal" /></p>
+
+<h3 id="need-to-balance-a-binary-tree">Need to balance a Binary Tree</h3>
+
+<pre><code class="language-bash">                1
+                 \
+                  3
+                   \
+                    4
+                     \
+                      5
+                       \
+                        6
+</code></pre>
+
+<p>If you see above tree in which there is a skew to the right side, the time taken to search,insert is almost equal to O(n) instead of O(logn). we are not making use of binary tree. so we need to balance a binary tree.</p>
+
+<h3 id="binary-search-tree">Binary Search Tree</h3>
+
+<ul>
+<li>value of all the nodes in left sub tree are lesser and right sub-tree are greater.</li>
+<li>All the operations insert, delete, search are proportional to height of the tree.</li>
+</ul>
+
+<h4 id="pseudo-code-1">Pseudo Code</h4>
+
+<h5 id="add-a-node">Add a Node</h5>
+
+<h6 id="recursive">Recursive</h6>
+
+<pre><code class="language-java">  AddNode(root,data) {
+    if(root == NULL) return new Node(data);
+    else if(root.data &lt; data) {
+        root.right = AddNode(root.right,data);
+    } else if(root.data &gt; data) {
+        root.left = AddNode(root.left,data);
+    }
+    return root;
+  }
+</code></pre>
+
+<h6 id="iterative">Iterative</h6>
+
+<pre><code class="language-java">    AddNode(root,data) {
+        if(root==NULL) return new Node(data);
+        while(root) {
+            if(root.data &gt; data) {
+                parent=root;
+                root = root.left;
+            } else {
+                parent=root;
+                root = root.right;
+            }
+        }
+        if(parent.data &gt; data) {
+            parent.left= new Node(data);
+        } else {
+            parent.right= new Node(data);
+        }
+    }
+</code></pre>
+
+<h5 id="search-a-node">Search a Node</h5>
+
+<h6 id="recursive-1">Recursive</h6>
+
+<pre><code class="language-java">      SearchBST(root,data) {
+        if(root==null) return &quot;NOT FOUND&quot;
+        else if(root.data &gt; data) {
+            return SearchBST(root.left,data);
+        } else if(root.data &lt; data) {
+            return SearchBST(root.right,data);
+        }
+        return root;
+      }
+</code></pre>
+
+<h6 id="non-recursive">Non Recursive</h6>
+
+<pre><code class="language-java">        SearchBST(root,data) {
+            if(root == NULL) return NULL;
+            while(root) {
+                if(root.data == data) {
+                    return root;
+                } else if(root.data &gt; data) {
+                    root = root.left;
+                } else {
+                    root = root.right;
+                }
+                return NULL:
+            }
+        }
+</code></pre>
+
+<h5 id="deletion-a-node">Deletion a Node</h5>
+
+<pre><code class="language-java">  DeleteBST(root,data) {
+    if(root == NULL) return root;
+    else if(data &lt; root.data) {
+        root.left = DeleteBST(root.left,data);
+    } else if(data &gt; root.data) {
+        root.right = DeleteBST(root.right,data);
+    } else {
+        // no child
+        if(root.left == NULL &amp;&amp; root.right == NULL) {
+            root=NULL;
+            return root;
+        }
+        // one child
+        else if(root.left == NULL) {
+            temp = root;
+            root = root.right;
+            DeleteBST temp;
+            return root;
+        }
+        else if(root.right == NULL) {
+            temp = root;
+            root = root.left;
+            DeleteBST temp;
+            return root;
+        }
+        // 2 children
+        else {
+            temp = FindMininum(root.right);
+            root.data = temp.data;
+            root.right = DeleteBST(root.right,temp.data);
+        }
+    }
+    return root;
+  }
+</code></pre>
+
+<h3 id="avl-tree">AVL Tree</h3>
+
+<ul>
+<li>It is a BST</li>
+<li>For any node, the height of left &amp; right sub tree differ by 1.</li>
+</ul>
+
+<p><img src="src/docs/images/AVL_tree_intro.png" alt="AVL Tree Intro" /></p>
+
+<h4 id="properties-of-avl-tree">Properties of AVL Tree</h4>
+
+<ul>
+<li>The height of an AVL tree storing n elements in it is O(logn)
+Lets try to find minimum no of nodes in AVL tree of height h : n(h)
+    n(h) = 1(root node) + n(h-1) + n(h-2)
+    By solving h = O(log(n)</li>
+<li>For a tree with K levels the no of the nodes can be  2<sup>(k-1)</sup> &lt; n &lt; 2<sup>(2k-1)</sup></li>
+<li>Lookup, insertion, and deletion all take O(logn) for best &amp; worst case.</li>
+<li>To calculate balance factor in AVL tree, Balance Factor(BF) = Height(left_sub_tree) - Height(right_sub_tree).</li>
+</ul>
+
+<h4 id="rotations-of-avl-tree">Rotations of AVL Tree</h4>
+
+<p>Insertion into of the cases. The pre-order before and after rotation stays the same.</p>
+
+<ul>
+<li>Left of Left sub tree</li>
+<li>Right of Left sub tree</li>
+<li>Left of Right sub tree</li>
+<li>Right of Right sub tree</li>
+</ul>
+
+<p><img src="src/docs/images/Tree_Rebalancing.png" alt="Rotation of AVL" />
+&copy; wikipedia</p>
+
+<h4 id="pseudo-code-avl-tree-rotations">Pseudo Code (AVL Tree Rotations)</h4>
+
+<h5 id="left-rotation">Left Rotation</h5>
+
+<pre><code class="language-java">LeftRotate(Node y) {
+	Node x = y.left;
+	Node z = y.right;
+
+	x.right = y;
+	y.left = z;
+
+	//update heights
+	y.height = max(height(y.left),height(y.right))+1;
+	x.height = max(height(x.left),height(x.right))+1;
+	
+	return x; 
+}
+</code></pre>
+
+<h5 id="right-rotation">Right Rotation</h5>
+
+<pre><code class="language-java">RightRotate(Node x) {
+	Node y=x.left;
+	Node z=x.right;
+
+	x.right=z;
+	y.left=x;
+
+	// Update heights
+	x.height=max(height(x.left),height(x.right))+1;
+	y.height=max(height(y.left),height(y.right))+1;
+
+	return y;
+}
+</code></pre>
+
+<h5 id="get-balance">Get Balance</h5>
+
+<pre><code class="language-java">GetBalance(node x) {
+ if(x == NULL) return 0;
+ return (height(x.left)-height(x.right));
+}
+</code></pre>
+
+<h3 id="problems-on-tree">Problems on Tree</h3>
+
+<ul>
+<li>Find the max element in a binary tree with recursion.</li>
+<li>Find max element in a binary tree without recursion.</li>
+<li>Search an element in binary tree with recursion.</li>
+<li>Search an element in binary tree without recursion.</li>
+<li>Insert an elment into a binary tree.</li>
+<li>Find the size of binary tree with recursion.</li>
+<li>Size of binary tree using iteration.</li>
+<li>Calculate the height of a binary tree.</li>
+<li>Find height of a binary tree using iteration.</li>
+<li>Find the longest path from the root to leaf in a tree.</li>
+<li>Find the deepest left leaf of a tree.</li>
+<li>Find if 2 binary tree&rsquo;s are structurally identical.</li>
+<li>Find the level which has maximum sum in a binary tree.</li>
+<li>Print all the root to leaf paths in a binary tree.</li>
+<li>Print all the nodes in path from root to the given node.</li>
+<li>Level order traversal in spiral form.</li>
+<li>Find running weighted median from a stream of values and weights</li>
+</ul>
+
+<h2 id="heap">Heap</h2>
+
+<p>Heap is a binary tree that satisfies the following conditions.</p>
+
+<ul>
+<li>A complete binary tree, all levels except last are fill &amp; last is left fill.</li>
+<li>Data item stored in each node is greater or equal to item in its children.</li>
+<li>Height is always O(logn)</li>
+<li>No of nodes in a Heap of Height h
+
+<ul>
+<li>No of nodes in complete binary tree of height h-1 = 2<sup>h</sup>-1</li>
+<li>No of nodes in complete binary tree of height h = 2<sup>(h-1)</sup>-1</li>
+<li>So total no of nodes in Heap = 2<sup>h</sup>-1 &lt; n &lt;= 2<sup>(h-1)</sup>-1</li>
+<li>h = <a href="[] mean floor">log<sub>2</sub>n</a></li>
+</ul></li>
+</ul>
+
+<p><img src="src/docs/images/Heap.png" alt="Heap" /></p>
+
+<ul>
+<li><em>Min Heap</em> : A[parent(i)] &lt;= A[i]</li>
+<li><em>Max Heap</em> : A[parent(i)] &gt;= A[i]</li>
+</ul>
+
+<h3 id="adt">ADT</h3>
+
+<ul>
+<li>Insert(x,S) : insert x into set S.</li>
+<li>max(S) : return max element from S.</li>
+<li>extract_max(S) : remove max element from S.</li>
+</ul>
+
+<h3 id="heap-operations">Heap Operations</h3>
+
+<ul>
+<li>BuildMinHeap : build a min heap from unordered array.</li>
+<li>Maxheapify: correct single voilation of heap property in a subtree&rsquo;s root.</li>
+</ul>
+
+<h3 id="implementing-heaps">Implementing Heaps</h3>
+
+<table>
+<thead>
+<tr>
+<th>Implementation</th>
+<th>remove()</th>
+<th>insert()</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Sorted Array</td>
+<td>O(1)</td>
+<td>O(n)</td>
+</tr>
+
+<tr>
+<td>Unsorted Array</td>
+<td>O(n)</td>
+<td>O(1)</td>
+</tr>
+
+<tr>
+<td>Heap</td>
+<td>O(log<sub>2</sub>n)</td>
+<td>O(log<sub>2</sub>n)</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="heap-as-array">Heap as Array</h4>
+
+<p><img src="src/docs/images/HeapAsArray.png" alt="" /></p>
+
+<pre><code class="language-java">HeapInsert(data) {
+	if(heapSize=arraySize) {
+		increaseCapacity();
+	}
+	array[++size]=data;
+	HeapifyUP(size);
+}
+
+HeapifyUP(index) {
+	while(index/2 &gt; 1 &amp;&amp; array[index/2]&gt;array[index]) {
+		swap(array[index/2],array[index]);
+		index=index/2;
+	}
+}
+
+HeapRemoveMin() {
+	removed = array[1];
+	array[1]=array[size];
+	HeapifyDown(1);
+	return removed;
+}
+
+HeapifyDown(index) {
+	while(2*index &lt;= size &amp;&amp; array[2*index] &lt; array[index]) {
+		swap(array[2*index],array[index]);
+		index=index*2;
+	}
+}
+
+HeapMinElement() {
+	if(heapSize&gt;1) 
+		return array[0];
+	else
+		Heap is Empty Exception	
+}
+</code></pre>
+
+<h3 id="applications-of-heap">Applications of Heap</h3>
+
+<ul>
+<li>Priority Queue implemented using Binary Heap</li>
+<li>Priority Queue&rsquo;s are used in Prim’s Algorithm and Dijkstra’s algorithm.</li>
+</ul>
+
+<h3 id="problems-on-heap">Problems on Heap</h3>
+
+<ul>
+<li>Is an array that is sorted in decreasing order a max-oriented heap ?</li>
+<li>Why is Binary Heap Preferred over BST for Priority Queue ?</li>
+<li>kth largest element in an array ?</li>
+<li>Sort an almost sorted array.</li>
+<li>Check if given binary tree is a Heap.</li>
+<li>Check if given array is Binary Heap.</li>
+<li>Merge K sorted arrays.</li>
+<li>Finding median of min heap in linear time.</li>
+<li>Find running median from a stream of Integers.</li>
+<li>There is a big file of words which is dynamically changing. We are continuously adding some words into it. How would you keep track of top 10 trending words at each moment?</li>
+<li>What are the minimum and maximum numbers of elements in a heap of height h?</li>
+<li>Show that an n-element heap has height [logn]</li>
+</ul>
+
+<h2 id="priority-queue">Priority Queue</h2>
+
+<ul>
+<li>Every entry contains key and associated value.</li>
+<li>Entry with highest priority is dequeued first.</li>
+</ul>
+
+<h3 id="adt-1">ADT</h3>
+
+<ul>
+<li>insert(item, priority)</li>
+<li>getHighestPriority()</li>
+<li>removeHighestPriority()</li>
+<li>empty()</li>
+<li>size()</li>
+</ul>
+
+<h3 id="big-o-2">Big O</h3>
+
+<table>
+<thead>
+<tr>
+<th>Insert</th>
+<th>Delete</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>O(logn)</td>
+<td>O(logn)</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="applications">Applications</h3>
+
+<ul>
+<li>Job Scheduling</li>
+</ul>
+
+<h2 id="double-ended-priority-queue">Double Ended Priority Queue</h2>
+
+<h2 id="graph">Graph</h2>
+
+<ul>
+<li>Non Linear DS</li>
+<li>Collection of Vertices and Edges</li>
+<li>Graph G=(V,E) where (V,E) is ordered pair (V,E) != (E,V)</li>
+</ul>
+
+<h3 id="types-2">Types</h3>
+
+<ul>
+<li><strong>Directed vs Undirected Graph</strong></li>
+</ul>
+
+<p><img src="src/docs/images/dir_undir.jpg" alt="" /></p>
+
+<ul>
+<li><strong>Weighted vs UnWeighted Graph</strong></li>
+</ul>
+
+<p><img src="src/docs/images/weight.png" alt="" />
+&copy; Prof Christian</p>
+
+<ul>
+<li><strong>Strongly Connected</strong></li>
+</ul>
+
+<p><img src="src/docs/images/strongly_connected.png" alt="" /></p>
+
+<ul>
+<li><strong>Acyclic graph</strong>
+
+<ul>
+<li>which you can travel in only one direction.</li>
+<li>You can&rsquo;t come back to the same vertex again.</li>
+</ul></li>
+</ul>
+
+<p><img src="src/docs/images/cyclic.png" alt="" /></p>
+
+<h3 id="no-of-edges">No of edges</h3>
+
+<pre><code>if |V| = n 
+then 0&lt;= |E| &lt;= n(n-1), if directed
+0 &lt;= |E| &lt;= n(n-1)/2
+</code></pre>
+
+<h3 id="graph-applications">Graph Applications</h3>
+
+<ul>
+<li>Electronic circuits</li>
+<li>Transportation Networks</li>
+<li>Social Networking sites</li>
+<li>Computer Networks (LAN, WAN, MAN)</li>
+<li>Databases (ER relationship diagrams)
+<br /></li>
+</ul>
+
+<h3 id="graph-implementations">Graph Implementations</h3>
+
+<h4 id="edge-list">Edge List</h4>
+
+<h5 id="non-weighted-graph-edge-list">Non Weighted graph (Edge List)</h5>
+
+<p><img src="src/docs/images/nonweighted_el.png" alt="" /></p>
+
+<h5 id="weighted-graph-edge-list">Weighted graph (Edge List)</h5>
+
+<p><img src="src/docs/images/weighted_el.png" alt="" /></p>
+
+<blockquote>
+<p>Space Complexity of Vertex List = O(|V|)
+Space Complexity of Edge List = O(|E|)</p>
+</blockquote>
+
+<ul>
+<li>To see if 2 vertices or nodes are connected you need to perform a linear search on the edge list.</li>
+<li>Performing a linear search on the edge list is O(|E|)</li>
+<li>O(|E|) is directory proportional to O(|V| * |V|) (since |E| = |V|*(|V|-1)) where |V| = n</li>
+</ul>
+
+<h4 id="adjacency-matrix">Adjacency Matrix</h4>
+
+<p>Here to find the vertices connected to a vertex, we just need to find index of vertex in vertex List ( which is O(|V|) and need to scan the index row of matrix which is again O(|V|)</p>
+
+<blockquote>
+<p>Time Complexity: O(|V|) + O(|V|) = O(|V|)
+Space Complexity:  O(|V^2|)</p>
+</blockquote>
+
+<ul>
+<li>This is good for dense graphs.</li>
+<li>Otherwise the init of matrix itself take O(|V<sup>2</sup>|)
+<br /></li>
+</ul>
+
+<h5 id="symmetric-un-directional-graph">Symmetric (Un Directional graph)</h5>
+
+<p><img src="src/docs/images/adjacency_matrix_symm.png" alt="" /></p>
+
+<h5 id="non-symmetric-directional-graph">Non Symmetric (Directional graph)</h5>
+
+<p><img src="src/docs/images/adjacency_matrix.png" alt="" /></p>
+
+<h4 id="adjacency-list">Adjacency List</h4>
+
+<h5 id="using-array-or-arraylist">Using Array or ArrayList</h5>
+
+<blockquote>
+<p>Time Complexity: O(|V|)  (linearly search index of vertex)+ O(|V|) (traverse in matric of particular row of index searched) = O(|V|)
+            Space Complexity:  &lt; O(|V2|)</p>
+</blockquote>
+
+<p><img src="src/docs/images/Adj_list_array.png" alt="" /></p>
+
+<ul>
+<li>If you use arrays in Adjacency list for storing edges, you have to create new array if array is completely filled, if a new node is inserted which is O(n), so better use linked list instead of array or array list.</li>
+</ul>
+
+<h5 id="using-ll">Using LL</h5>
+
+<p><img src="src/docs/images/Adj_list_ll.png" alt="" /></p>
+
+<ul>
+<li>You can also use a Tree DS which has O(log n) for all operations.</li>
+</ul>
+
+<h3 id="traversal-of-graphs">Traversal of graphs</h3>
+
+<h4 id="breadth-first-traversal-bfs">Breadth First Traversal (BFS)</h4>
+
+<ul>
+<li>Traversing nodes in layers, layer 1 first, then layer 2 etc.</li>
+<li>In order to avoid visited node twice, we mark boolean visited.</li>
+</ul>
+
+<pre><code class="language-java">BFS_Iteration() {
+	mark all the nodes as not_visited;
+	Queue queue = new Queue();
+
+	queue.enqueue(first_element);
+
+	while(!queue.is_empty()) {
+		var = queue.dequeue();
+		if(var is not visited) {
+			mark var as visited;
+			print var;
+		}
+		for(adj: var.get_adjacentVertices()) {
+			queue.enqueue(adj);
+		}
+	}
+}
+</code></pre>
+
+<h4 id="depth-first-traversal-dfs">Depth First Traversal (DFS)</h4>
+
+<h5 id="recursive-2">Recursive</h5>
+
+<pre><code class="language-java">procedure DFS(G,v) {
+	label v as visited
+	print v;
+	for(adj : all adjacent neighbours of v) {
+	    if (vertex adj is not visited) {
+	    		DFS(G,adj);
+	    }
+	}
+}
+</code></pre>
+
+<h5 id="iterative-1">Iterative</h5>
+
+<pre><code class="language-java">DFS_Iteration() {
+	set all nodes to not_visited;
+	s=new Stack();
+	s.push(initial_node);
+
+	while(stack not empty) {
+		var = s.pop();
+		if(var not visited) {
+			set var to visited;
+			print var;
+			for(adj: all adjacent of var) {
+				if(adj not visited) {
+					s.push(adj);
+				}
+			}
+		}
+	}
+}
+</code></pre>
+
+<h3 id="big-o-3">Big O</h3>
+
+<table>
+<thead>
+<tr>
+<th>Implementation</th>
+<th>Check edge bw v1 &amp; v2</th>
+<th>Iterate over edges of v</th>
+<th>Add Vertex</th>
+<th>Add Edge</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Edge List</td>
+<td>|E| or |V<sup>2</sup>|</td>
+<td>|E|</td>
+<td>O(1) (if index given) <br/> O(v) if vertex given</td>
+<td>O(1) (if index given) <br/> O(v) if vertex given</td>
+</tr>
+
+<tr>
+<td>Adj Matrix</td>
+<td>O(1)</td>
+<td>O(|V|)</td>
+<td>O(1) (if index given) <br/> O(v) if vertex given</td>
+<td>O(1) (if index given) O(v) <br/> if vertex given</td>
+</tr>
+
+<tr>
+<td>Adj List</td>
+<td>&lt; O(|V|)</td>
+<td>&lt; O(|V|)</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16"><path d="M16 9.5c0 .373-.24.74-.5 1l-5 5c-.275.26-.634.5-1 .5-.373 0-.74-.24-1-.5L1 8a2.853 2.853 0 0 1-.7-1C.113 6.55 0 5.973 0 5.6V1.4C0 1.034.134.669.401.401.67.134 1.034 0 1.4 0h4.2c.373 0 .95.113 1.4.3.45.187.732.432 1 .7l7.5 7.502c.26.274.5.632.5.998zM3.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/data-structures/" rel="tag">Data Structures</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/graph-theory/" rel="tag">Graph Theory</a></li>
+	</ul>
+</div>
+	</article>
+	
+	
+<nav class="post-nav row clearfix">
+	<div class="post-nav__item post-nav__item--next col-1-2">
+		<a class="post-nav__link" href="/blog/spark_transformations/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Transformations in Spark</p></a>
+	</div>
+</nav>
+	
+</main>
+<aside class="sidebar post__sidebar">
+<div class="post__toc toc">
+	<h4 class="widget__title">Page content</h4>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#types">Types</a></li>
+<li><a href="#arrays">Arrays</a>
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#types-of-arrays">Types of Arrays</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#limitations-of-arrays">Limitations of Arrays</a></li>
+<li><a href="#problems-on-arrays">Problems on Arrays</a></li>
+</ul></li>
+<li><a href="#array-lists">Array Lists</a>
+<ul>
+<li><a href="#features-1">Features</a></li>
+<li><a href="#pros">Pros</a></li>
+<li><a href="#limitations">Limitations</a></li>
+<li><a href="#big-o">Big O</a></li>
+<li><a href="#pseudo-code">Pseudo Code</a>
+<ul>
+<li><a href="#to-set-an-element">To set an element</a></li>
+<li><a href="#to-add-an-element">To add an element</a></li>
+<li><a href="#to-get-an-element">To get an element</a></li>
+<li><a href="#to-remove-an-element">To remove an element</a></li>
+<li><a href="#to-find-element-in-an-index">To find element in an index</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#linked-lists">Linked Lists</a>
+<ul>
+<li><a href="#features-2">Features:</a></li>
+<li><a href="#types-1">Types</a></li>
+<li><a href="#usages">Usages</a></li>
+<li><a href="#pros-1">Pros</a></li>
+<li><a href="#limitations-1">Limitations</a></li>
+<li><a href="#big-o-1">Big O</a></li>
+<li><a href="#problems-on-ll">Problems on LL</a></li>
+<li><a href="#pseudo-code-singly-ll">Pseudo Code (singly LL)</a>
+<ul>
+<li><a href="#set-an-element-at-an-index">Set an element at an index</a></li>
+<li><a href="#add-an-element">Add an element</a></li>
+<li><a href="#get-an-element-at-index">Get an element at index</a></li>
+<li><a href="#remove-an-element-at-index">Remove an element at index</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#stack">Stack</a>
+<ul>
+<li><a href="#features-3">Features</a></li>
+<li><a href="#stack-adt">Stack ADT</a></li>
+<li><a href="#implementations">Implementations</a></li>
+<li><a href="#usage-1">Usage</a></li>
+<li><a href="#pros-2">Pros</a></li>
+<li><a href="#limitations-2">Limitations</a></li>
+<li><a href="#problems-on-stack">Problems on stack</a></li>
+<li><a href="#pseudo-code-stack-using-ll">Pseudo code (Stack using LL)</a>
+<ul>
+<li><a href="#push-operation">Push operation</a></li>
+<li><a href="#pop-operation">Pop operation</a></li>
+<li><a href="#peep-operation">Peep Operation</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#queue">Queue</a>
+<ul>
+<li><a href="#features-4">Features</a></li>
+<li><a href="#usages-1">Usages</a></li>
+<li><a href="#implementations-1">Implementations</a></li>
+<li><a href="#circular-queue">Circular Queue</a></li>
+<li><a href="#priority-queue-impl">Priority Queue Impl</a></li>
+<li><a href="#problems-on-queue">Problems on Queue</a></li>
+<li><a href="#pseudo-code-queue-using-ll">Pseudo Code (Queue using LL)</a>
+<ul>
+<li><a href="#enqueue">EnQueue</a></li>
+<li><a href="#dequeue">DeQueue</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#tree">Tree</a>
+<ul>
+<li><a href="#features-5">Features</a></li>
+<li><a href="#types-of-trees">Types of Trees</a></li>
+<li><a href="#types-of-binary-trees">Types of binary Trees</a></li>
+<li><a href="#usage-2">Usage</a></li>
+<li><a href="#properties-of-binary-tree">Properties of Binary Tree</a></li>
+<li><a href="#binary-tree-implementation">Binary Tree Implementation</a></li>
+<li><a href="#recursive-definition">Recursive definition</a></li>
+<li><a href="#tree-traversal">Tree Traversal</a>
+<ul>
+<li><a href="#breadth-first-traversal">Breadth First Traversal:</a></li>
+<li><a href="#depth-first-traversal">Depth First Traversal</a>
+<ul>
+<li><a href="#pre-order">Pre Order</a>
+<ul>
+<li><a href="#using-recursion">Using Recursion</a></li>
+<li><a href="#using-iteration">Using Iteration</a></li>
+</ul></li>
+<li><a href="#in-order">In Order</a>
+<ul>
+<li><a href="#using-recursion-1">Using Recursion</a></li>
+<li><a href="#using-iteration-1">Using Iteration</a></li>
+</ul></li>
+<li><a href="#post-order">Post Order</a>
+<ul>
+<li><a href="#using-recursion-2">Using Recursion</a></li>
+<li><a href="#using-iteration-2">Using Iteration</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#need-to-balance-a-binary-tree">Need to balance a Binary Tree</a></li>
+<li><a href="#binary-search-tree">Binary Search Tree</a>
+<ul>
+<li><a href="#pseudo-code-1">Pseudo Code</a>
+<ul>
+<li><a href="#add-a-node">Add a Node</a>
+<ul>
+<li><a href="#recursive">Recursive</a></li>
+<li><a href="#iterative">Iterative</a></li>
+</ul></li>
+<li><a href="#search-a-node">Search a Node</a>
+<ul>
+<li><a href="#recursive-1">Recursive</a></li>
+<li><a href="#non-recursive">Non Recursive</a></li>
+</ul></li>
+<li><a href="#deletion-a-node">Deletion a Node</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#avl-tree">AVL Tree</a>
+<ul>
+<li><a href="#properties-of-avl-tree">Properties of AVL Tree</a></li>
+<li><a href="#rotations-of-avl-tree">Rotations of AVL Tree</a></li>
+<li><a href="#pseudo-code-avl-tree-rotations">Pseudo Code (AVL Tree Rotations)</a>
+<ul>
+<li><a href="#left-rotation">Left Rotation</a></li>
+<li><a href="#right-rotation">Right Rotation</a></li>
+<li><a href="#get-balance">Get Balance</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#problems-on-tree">Problems on Tree</a></li>
+</ul></li>
+<li><a href="#heap">Heap</a>
+<ul>
+<li><a href="#adt">ADT</a></li>
+<li><a href="#heap-operations">Heap Operations</a></li>
+<li><a href="#implementing-heaps">Implementing Heaps</a>
+<ul>
+<li><a href="#heap-as-array">Heap as Array</a></li>
+</ul></li>
+<li><a href="#applications-of-heap">Applications of Heap</a></li>
+<li><a href="#problems-on-heap">Problems on Heap</a></li>
+</ul></li>
+<li><a href="#priority-queue">Priority Queue</a>
+<ul>
+<li><a href="#adt-1">ADT</a></li>
+<li><a href="#big-o-2">Big O</a></li>
+<li><a href="#applications">Applications</a></li>
+</ul></li>
+<li><a href="#double-ended-priority-queue">Double Ended Priority Queue</a></li>
+<li><a href="#graph">Graph</a>
+<ul>
+<li><a href="#types-2">Types</a></li>
+<li><a href="#no-of-edges">No of edges</a></li>
+<li><a href="#graph-applications">Graph Applications</a></li>
+<li><a href="#graph-implementations">Graph Implementations</a>
+<ul>
+<li><a href="#edge-list">Edge List</a>
+<ul>
+<li><a href="#non-weighted-graph-edge-list">Non Weighted graph (Edge List)</a></li>
+<li><a href="#weighted-graph-edge-list">Weighted graph (Edge List)</a></li>
+</ul></li>
+<li><a href="#adjacency-matrix">Adjacency Matrix</a>
+<ul>
+<li><a href="#symmetric-un-directional-graph">Symmetric (Un Directional graph)</a></li>
+<li><a href="#non-symmetric-directional-graph">Non Symmetric (Directional graph)</a></li>
+</ul></li>
+<li><a href="#adjacency-list">Adjacency List</a>
+<ul>
+<li><a href="#using-array-or-arraylist">Using Array or ArrayList</a></li>
+<li><a href="#using-ll">Using LL</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#traversal-of-graphs">Traversal of graphs</a>
+<ul>
+<li><a href="#breadth-first-traversal-bfs">Breadth First Traversal (BFS)</a></li>
+<li><a href="#depth-first-traversal-dfs">Depth First Traversal (DFS)</a>
+<ul>
+<li><a href="#recursive-2">Recursive</a></li>
+<li><a href="#iterative-1">Iterative</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#big-o-3">Big O</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+	</div>
+</div>
+</aside>
+	</div>
+		<footer class="footer">
+			<div class="container container-inner">
+				<div class="footer__copyright">&copy; 2018 Need For Code. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  "HTML-CSS": { linebreaks: { automatic: true } },
+         SVG: { linebreaks: { automatic: true } },
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+</body>
+</html>

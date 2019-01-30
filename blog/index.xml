@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Need For Code</title>
+    <link>https://needforcode.github.io/blog/</link>
+    <description>Recent content in Blogs on Need For Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://needforcode.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install KO Reader on kobo aura one</title>
+      <link>https://needforcode.github.io/blog/kobo_koreader/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://needforcode.github.io/blog/kobo_koreader/</guid>
+      <description>Here are steps I followed to install ko reader on kobo aura one.
+Install KSM  KSM 9 is the latest build at the time of this installation. Downlod it here Extract the zip, you will have the following inside it.
+kbmenupngs KoboRoot.tgz  Now connect kobo to laptop using usb and place kbmenupngs in the root of the kobo and reboot the device by disconnecting it.
+ Place KoboRoot.</description>
+    </item>
+    
+    <item>
+      <title>Host Hugo generated static site on Github Pages</title>
+      <link>https://needforcode.github.io/blog/hugo_on_github_pages/</link>
+      <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://needforcode.github.io/blog/hugo_on_github_pages/</guid>
+      <description>About Hugo The world’s fastest framework for building websites.
+About Github Pages Websites for you and your projects. Hosted directly from your GitHub repository. Just edit, push, and your changes are live.
+Install Git &amp;amp; Hugo You can do this your own.
+Create git repos Create below 2 repositores in github and clone one of them.
+Create https://github.com/&amp;lt;user_name&amp;gt;/&amp;lt;blog_name&amp;gt;.git in UI Create https://github.com/&amp;lt;user_name&amp;gt;/&amp;lt;user_name&amp;gt;.github.io.git in UI  Clone one of them as below.</description>
+    </item>
+    
+    <item>
+      <title>Sorting Algorithms</title>
+      <link>https://needforcode.github.io/blog/sorting_algorithms/</link>
+      <pubDate>Sun, 15 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://needforcode.github.io/blog/sorting_algorithms/</guid>
+      <description>Classifications  Time Complexity Space Complexity Stability Comparision Vs Non-Comparision  Simple Sorts Selection Sort Overview    Property value     Time Complexity Best: $O(n^2)$ Worst: $O(n^2)$   Space Complexity $O(1)$ in-place   Stability Stable Sort   Sort Type Comparision    Introduction  Find the smallest element from the array, exchange with the first and so on&amp;hellip;   For every exchange, an element will be in its right place.</description>
+    </item>
+    
+    <item>
+      <title>Transformations in Spark</title>
+      <link>https://needforcode.github.io/blog/spark_transformations/</link>
+      <pubDate>Thu, 24 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://needforcode.github.io/blog/spark_transformations/</guid>
+      <description>Transformations in Spark aggregate The aggregate can return a different type than RDD on which we are working on. It allows users to apply 2 functions, one on top of each partition (input type T =&amp;gt; U), other to aggregate the results of all the partitions into final result (merging 2 U&amp;rsquo;s). Both the functions have to be commutative and associative. We can also specify a initial value.
+val inputRdd = sc.</description>
+    </item>
+    
+    <item>
+      <title>Data Structures</title>
+      <link>https://needforcode.github.io/blog/data_structures/</link>
+      <pubDate>Wed, 26 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://needforcode.github.io/blog/data_structures/</guid>
+      <description>Types  Linear: order is maintained. Ex: Array, LinkedList, Stack, Queue. Non-Linear: Ex: Trees, Graph  Arrays Features  Collection of elements. Also called with names Vectors, Tuples.  One dimensional array Two dimensional array  Homogenous (all elements are of same type) Ordered  Types of Arrays  Static Arrays (fixed size)  Have O(1) insertion, deletion and reading. Easy to implement.  Dynamic Arrays (grow in size as array grows)  Flexible in size Perforamance as cost for flexibility Complext to implement than fixed array.</description>
+    </item>
+    
+  </channel>
+</rss>

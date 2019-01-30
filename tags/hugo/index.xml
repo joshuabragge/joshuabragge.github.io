@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Need For Code</title>
+    <link>https://needforcode.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Need For Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://needforcode.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Host Hugo generated static site on Github Pages</title>
+      <link>https://needforcode.github.io/blog/hugo_on_github_pages/</link>
+      <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://needforcode.github.io/blog/hugo_on_github_pages/</guid>
+      <description>About Hugo The world’s fastest framework for building websites.
+About Github Pages Websites for you and your projects. Hosted directly from your GitHub repository. Just edit, push, and your changes are live.
+Install Git &amp;amp; Hugo You can do this your own.
+Create git repos Create below 2 repositores in github and clone one of them.
+Create https://github.com/&amp;lt;user_name&amp;gt;/&amp;lt;blog_name&amp;gt;.git in UI Create https://github.com/&amp;lt;user_name&amp;gt;/&amp;lt;user_name&amp;gt;.github.io.git in UI  Clone one of them as below.</description>
+    </item>
+    
+  </channel>
+</rss>
