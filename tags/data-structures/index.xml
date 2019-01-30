@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Structures on Need For Code</title>
-    <link>https://needforcode.github.io/tags/data-structures/</link>
+    <link>https://joshuabragge.github.io/tags/data-structures/</link>
     <description>Recent content in Data Structures on Need For Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 26 Mar 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://needforcode.github.io/tags/data-structures/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joshuabragge.github.io/tags/data-structures/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data Structures</title>
-      <link>https://needforcode.github.io/blog/data_structures/</link>
+      <link>https://joshuabragge.github.io/blog/data_structures/</link>
       <pubDate>Wed, 26 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://needforcode.github.io/blog/data_structures/</guid>
+      <guid>https://joshuabragge.github.io/blog/data_structures/</guid>
       <description>Types  Linear: order is maintained. Ex: Array, LinkedList, Stack, Queue. Non-Linear: Ex: Trees, Graph  Arrays Features  Collection of elements. Also called with names Vectors, Tuples.  One dimensional array Two dimensional array  Homogenous (all elements are of same type) Ordered  Types of Arrays  Static Arrays (fixed size)  Have O(1) insertion, deletion and reading. Easy to implement.  Dynamic Arrays (grow in size as array grows)  Flexible in size Perforamance as cost for flexibility Complext to implement than fixed array.</description>
     </item>
     

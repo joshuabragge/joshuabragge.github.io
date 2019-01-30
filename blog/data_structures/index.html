@@ -6,12 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Data Structures</title>
 	<meta name="description" content="Theory of all data structures">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.53" />
 	<meta property="og:title" content="Data Structures" />
 <meta property="og:description" content="Theory of all data structures" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://needforcode.github.io/blog/data_structures/" /><meta property="article:published_time" content="2014-03-26T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://joshuabragge.github.io/blog/data_structures/" /><meta property="article:published_time" content="2014-03-26T00:00:00&#43;00:00"/>
 <meta property="article:modified_time" content="2014-03-26T00:00:00&#43;00:00"/>
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Data Structures"/>
 <meta name="twitter:description" content="Theory of all data structures"/>
@@ -867,37 +868,38 @@ NOTE: all operations above happens in O(1).</li>
 
 <h6 id="using-iteration-2">Using Iteration</h6>
 
-<pre><code class="language-java">PostOrder_Iterative(root) {
+<p>```java
+PostOrder_Iterative(root) {
     if(root == null) return;
     Stack stack = Init the stack;
-	stack.push(root);
-        
-	while(stack not empty) {
-		temp = stack.pop();
-		
-		if(temp.left not null and temp.right not null) {
+	stack.push(root);</p></li>
+</ul>
+
+<p>	while(stack not empty) {
+		temp = stack.pop();</p>
+
+<p>		if(temp.left not null and temp.right not null) {
 			print stack.pop();
 		} else {
 			if(temp.right != null) {
 				stack.push(temp.right);
 				temp.right = null;
-			}
+			}</p>
 
-			if(temp.left != null) {
+<p>			if(temp.left != null) {
 				stack.push(temp.left);
 				temp.left = null;
 			}
 		}
-  }
-}
-</code></pre></li>
-</ul>
+      }
+    }</p>
 
-<p><img src="https://cloud.githubusercontent.com/assets/8268939/22766646/b99f1ee0-ee44-11e6-894a-62c2ebb146a4.jpg" alt="tree_traversal" /></p>
+<pre><code>![tree_traversal](https://cloud.githubusercontent.com/assets/8268939/22766646/b99f1ee0-ee44-11e6-894a-62c2ebb146a4.jpg)
 
-<h3 id="need-to-balance-a-binary-tree">Need to balance a Binary Tree</h3>
+### Need to balance a Binary Tree
 
-<pre><code class="language-bash">                1
+```bash
+                1
                  \
                   3
                    \
@@ -1667,7 +1669,6 @@ Space Complexity:  O(|V^2|)</p>
 </ul></li>
 </ul></li>
 </ul></li>
-<li><a href="#need-to-balance-a-binary-tree">Need to balance a Binary Tree</a></li>
 <li><a href="#binary-search-tree">Binary Search Tree</a>
 <ul>
 <li><a href="#pseudo-code-1">Pseudo Code</a>
@@ -1759,7 +1760,7 @@ Space Complexity:  O(|V^2|)</p>
 	</div>
 		<footer class="footer">
 			<div class="container container-inner">
-				<div class="footer__copyright">&copy; 2018 Need For Code. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
+				<div class="footer__copyright">&copy; 2019 Need For Code. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
 			</div>
 		</footer>
 	</div>

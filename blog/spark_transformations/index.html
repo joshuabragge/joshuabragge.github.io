@@ -6,12 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Transformations in Spark</title>
 	<meta name="description" content="Apache Spark Transformation Examples">
-	<meta name="generator" content="Hugo 0.49-DEV" />
+	<meta name="generator" content="Hugo 0.53" />
 	<meta property="og:title" content="Transformations in Spark" />
 <meta property="og:description" content="Apache Spark Transformation Examples" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://needforcode.github.io/blog/spark_transformations/" /><meta property="article:published_time" content="2016-03-24T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://joshuabragge.github.io/blog/spark_transformations/" /><meta property="article:published_time" content="2016-03-24T00:00:00&#43;00:00"/>
 <meta property="article:modified_time" content="2016-03-24T00:00:00&#43;00:00"/>
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Transformations in Spark"/>
 <meta name="twitter:description" content="Apache Spark Transformation Examples"/>
@@ -167,15 +168,14 @@ output: Array[Array[Int]] = Array(Array(1, 2, 3, 4, 5), Array(6, 7, 8, 9, 10))
 <li>Return an RDD of grouped items.</li>
 <li>Each group consists of a key and a sequence of elements mapping to that key.</li>
 <li>Ordering is not guaranteed, not same for every execution.</li>
-
-<li><p>Shuffle happens, better to use reduceby than groupby since it does not combine in each partition itself ( i.e groupBy happens in reduce phase), hence result high network traffic.</p>
+<li>Shuffle happens, better to use reduceby than groupby since it does not combine in each partition itself ( i.e groupBy happens in reduce phase), hence result high network traffic.</li>
+</ul>
 
 <pre><code>val rdd1 = sc.parallelize(Array(2,3,4,1,3,4))
 val output = rdd1.groupBy(x =&gt; x).collect()
   
 output: Array[(Int, Iterable[Int])] = Array((4,CompactBuffer(4, 4)), (2,CompactBuffer(2)), (1,CompactBuffer(1)), (3,CompactBuffer(3, 3)))
-</code></pre></li>
-</ul>
+</code></pre>
 
 <h2 id="intersection">intersection</h2>
 
@@ -183,16 +183,15 @@ output: Array[(Int, Iterable[Int])] = Array((4,CompactBuffer(4, 4)), (2,CompactB
 <li>Return the intersection of this RDD and another one.</li>
 <li>Result will not contain any duplicate.</li>
 <li>Done by map, co-group, filter in the background.</li>
-
-<li><p>performs a shuffle internally</p>
+<li>performs a shuffle internally</li>
+</ul>
 
 <pre><code>val output = sc.parallelize(Array(1,2,3,4))
-           .intersection(sc.parallelize(Array(3,4,5,6)))
-           .collect()
+               .intersection(sc.parallelize(Array(3,4,5,6)))
+               .collect()
   
 output: Array[Int] = Array(4, 3)
-</code></pre></li>
-</ul>
+</code></pre>
 
 <h2 id="map">map</h2>
 
@@ -363,8 +362,8 @@ res0: Array[Int] = Array(7, 6, 1)
 <li>Return the union of this RDD and another one.</li>
 <li>Identical elements will appear multiple times.</li>
 <li>Need to use distinct to eliminate them.</li>
-
-<li><p>Can also use ++ instead of union.</p>
+<li>Can also use ++ instead of union.</li>
+</ul>
 
 <pre><code>val a = sc.parallelize(1 to 10, 1)
 val b = sc.parallelize(10 to 20, 1)
@@ -374,8 +373,7 @@ res0: Array[Int] = Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 11, 12, 13, 14, 15, 
   
 a.union(b).distinct().collect();
 res1: Array[Int] = Array(4, 16, 14, 6, 8, 20, 12, 18, 10, 2, 19, 13, 15, 11, 1, 17, 7, 3, 9, 5)
-</code></pre></li>
-</ul>
+</code></pre>
 
 		</div>
 		
@@ -440,7 +438,7 @@ res1: Array[Int] = Array(4, 16, 14, 6, 8, 20, 12, 18, 10, 2, 19, 13, 15, 11, 1, 
 	</div>
 		<footer class="footer">
 			<div class="container container-inner">
-				<div class="footer__copyright">&copy; 2018 Need For Code. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
+				<div class="footer__copyright">&copy; 2019 Need For Code. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
 			</div>
 		</footer>
 	</div>

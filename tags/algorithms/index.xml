@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algorithms on Need For Code</title>
-    <link>https://needforcode.github.io/tags/algorithms/</link>
+    <link>https://joshuabragge.github.io/tags/algorithms/</link>
     <description>Recent content in Algorithms on Need For Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 May 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://needforcode.github.io/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joshuabragge.github.io/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sorting Algorithms</title>
-      <link>https://needforcode.github.io/blog/sorting_algorithms/</link>
+      <link>https://joshuabragge.github.io/blog/sorting_algorithms/</link>
       <pubDate>Sun, 15 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://needforcode.github.io/blog/sorting_algorithms/</guid>
+      <guid>https://joshuabragge.github.io/blog/sorting_algorithms/</guid>
       <description>Classifications  Time Complexity Space Complexity Stability Comparision Vs Non-Comparision  Simple Sorts Selection Sort Overview    Property value     Time Complexity Best: $O(n^2)$ Worst: $O(n^2)$   Space Complexity $O(1)$ in-place   Stability Stable Sort   Sort Type Comparision    Introduction  Find the smallest element from the array, exchange with the first and so on&amp;hellip;   For every exchange, an element will be in its right place.</description>
     </item>
     
