@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on penny for my thoughts</title>
-    <link>https://joshuabragge.github.io/joshuabragge.github.io/post/</link>
-    <description>Recent content in Posts on penny for my thoughts</description>
+    <title>Posts on joshuabragge.github.io</title>
+    <link>http://joshuabragge.github.io/post/</link>
+    <description>Recent content in Posts on joshuabragge.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>ja</language>
+    <copyright>probably</copyright>
     <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://joshuabragge.github.io/joshuabragge.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://joshuabragge.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Welcome to the show</title>
-      <link>https://joshuabragge.github.io/joshuabragge.github.io/post/welcome-to-the-show/</link>
+      <link>http://joshuabragge.github.io/post/welcome-to-the-show/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://joshuabragge.github.io/joshuabragge.github.io/post/welcome-to-the-show/</guid>
+      <guid>http://joshuabragge.github.io/post/welcome-to-the-show/</guid>
       <description>This is a test of your emergency broadcasting equipment. Please stand by&amp;hellip;</description>
     </item>
     
